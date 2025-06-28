@@ -1,19 +1,48 @@
-#titulo{ 
+#titulo{ /*se refiere a id="titulo" del html*/
     color: blue;
 }
+/*esto es un comentario*/
 .parrafo{
     color: blueviolet;
 }
-.texto{
+p.texto{/*para asignar a todas las clases del tipo texto, a etiquetas de p*/
     color: brown;
 }
 div p {
     color:aquamarine;
 }
-div h2, div h3 {
+div h2, div h3 {/*para indicar que todas las etiquetas de div h2,h3, etc sean modificadas*/
     color: brown;
 }
-*{
+*{/*esto modifica toda la pantalla exepto*/
     font-size: 24px;
     color: black;
+}
+/*asignando colores con hexagesimal .color{
+    color: #ff0000;
+}*/
+
+/*asignando colores con RGB .color {
+    color: rgb(255,0,0)
+}*/
+.color{
+/*     border: 5px black solid;
+ */    /*dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden*/
+    border-style: solid; /*stilo del borde*/
+    border-color: blue;/*color del borde*/
+    border-radius: 10px;/*el tipo de borde redondeado*/
+    border-width: 5px; /*tamaño del ancho del borde, se pueden usar medidas de mm, in, pc, em y 2rem(relativo a la fuente principal HTML) */  
+}
+#fondo{
+    background-color: rgba(255, 0, 0, 0.3);
+    opacity: 0.3;
 }

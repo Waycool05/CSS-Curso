@@ -43,6 +43,38 @@ div h2, div h3 {/*para indicar que todas las etiquetas de div h2,h3, etc sean mo
     border-width: 5px; /*tamaño del ancho del borde, se pueden usar medidas de mm, in, pc, em y 2rem(relativo a la fuente principal HTML) */  
 }
 #fondo{
-    background-color: rgba(255, 0, 0, 0.3);
-    opacity: 0.3;
+    height: 300px;
+    background: red url('img/yo_pelo_corto.jpg') repeat-y center bottom / 100px 100px ; /*para poner todo en una sola línea*/
+    /* background-color: gray;*/
+    /* opacity: 0.3;*/
+    /* background-image: u/rl('img/yo_pelo_corto.jpg');*/
+    /* background-size: 100px 100px;*/
+    /* background-repeat: repeat-y repeat-x; */ /* se puede repetir la imagen tanto horizontal, como vertical, también podemos elegir no-repeat */
+    /* background-position: center ;*/ /*para elegir en que posición queremos el fondo (top - center - botton)*/
+    /* background: color( red) url('img/yo_de_pelo_corto.jpg') repeat-y center bottom ; */
+    /*no tendrá efecto si se utiliza después de otros background*/
+    /*ver línea 47*/
+    
 }
+.margen{
+    background-color: blueviolet ;
+    margin: 15px 20px 25px 30px; /*margenes externos donde 15px es top, 20px es right, 25px es bottom, 30px left*/
+    padding: 30px 25px 20px 15px; /*margenes internos donde 30px es top, 25px es right, 20px es bottom, 15px left*/
+    border: solid 5px black; /* borde entre margin y padding*/
+    height: 100px;
+    width: 50px;
+    overflow: scroll; /* hidden, scroll, visible*/
+    outline: 1px solid red; /*es un borde que se coloca por fuera del borde*/
+}
+.text {
+    /* los valores de text- pueden ser -aling, -decoration, -transform, -overflow, -shadow, -indent, - rendering,
+    -size-adjust, -decoration-line, -decoration-color, -wrap, -decoration-thickness */
+    font-family: 'Comic Neue', sans-serif;/*Comic Neue, es traido de la página de google fonts, el link esta en el head del indext.html*/
+    
+
+    text-align: justify;/*center, end, justify, left, right, start*/
+    text-decoration: underline wavy 6px greenyellow; /*dashed, dotted, double, line-through, none, overline, solid, underline, wavy*/
+    text-shadow: 3px 5px 5px blueviolet; /*sombra del texto 1er valor abajo, 2do derecha, 3ro difuminado y luego el color*/
+
+}
+

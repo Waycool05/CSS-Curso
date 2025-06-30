@@ -70,11 +70,114 @@ div h2, div h3 {/*para indicar que todas las etiquetas de div h2,h3, etc sean mo
     /* los valores de text- pueden ser -aling, -decoration, -transform, -overflow, -shadow, -indent, - rendering,
     -size-adjust, -decoration-line, -decoration-color, -wrap, -decoration-thickness */
     font-family: 'Comic Neue', sans-serif;/*Comic Neue, es traido de la página de google fonts, el link esta en el head del indext.html*/
-    
+
 
     text-align: justify;/*center, end, justify, left, right, start*/
     text-decoration: underline wavy 6px greenyellow; /*dashed, dotted, double, line-through, none, overline, solid, underline, wavy*/
     text-shadow: 3px 5px 5px blueviolet; /*sombra del texto 1er valor abajo, 2do derecha, 3ro difuminado y luego el color*/
+}
+/* Propiedades de Link*/
+/* a: link es uno de los estados*/
+/* el orden de los selectores que se usen tienen que ser en orden, no se puede usar hover antes de link por ejemplo*/
 
+a:link {
+    color: blueviolet;
+}
+a:visited{
+    color: grey;
+}
+/* hover cuando paso el raton sobre el link*/
+a:hover{
+    color: yellow;
+}
+/* active cuando estoy pinchando el link*/
+a:active{
+    color: chocolate;
 }
 
+/* LISTAS , se le puede agregar todos los selectores que vimos hasta ahora*/
+
+ul{
+    background-color: blueviolet;
+    list-style-type:square;
+    padding-left: none;
+}
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid 1px color(black);
+    padding: 5px;
+}
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+
+}
+tr:nth-child(even){ /*even o odd*/
+    background-color: #eee;
+}
+tr:hover {
+    background-color: gray;
+    cursor: pointer; /* cursor tipo manito*/
+}
+span {
+    display: block;
+   /* display: none; elimina la línea */
+   /* visibility: hidden; */
+   max-width: 300px;
+   background-color: red;
+   color: aquamarine;
+}
+.inline {
+    display: inline;
+}
+/* la diferencia entre display block y inline, es basicamente que block fuerza un salto de línea y inline cierra sin salto*/
+/* los elementos que vienen por defecto con inline son: span, links y etiqueta img*/
+#position { /* por defecto esta en static*/
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}/*sticky utiliza la etiqueta más cercana para su utilización*/
+/* FLOAT*/
+.izq{
+    float: left;
+    width: 100px;
+}
+.container{ 
+    height: 200px;
+}
+.der {
+    float: right;
+}
+.izquierda {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.column {
+    border: solid 0px black;
+    border-radius: 5px;
+    margin: 0 ;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+/* FLOAT*/
+.inline-block {
+    display: inline-block; /*si solo se le da la propiedad de inline (solo) no se le puede agregar la propiedad de height no widht */
+    height: 55px;
+    width: 100px;
+    background-color: blueviolet;
+}
+.center { /*siempre hay que agregarle un valor diferente del 100%*/
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: goldenrod;
+    /*este es un ejemplo de como centrar*/
+}
